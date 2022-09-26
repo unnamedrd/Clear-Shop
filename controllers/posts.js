@@ -43,7 +43,7 @@ module.exports = {
         likes: 0,
         user: req.user.id,
       });
-      console.log("Post has been added!");
+      console.log("Business has been added!");
       res.redirect("/profile");
     } catch (err) {
       console.log(err);

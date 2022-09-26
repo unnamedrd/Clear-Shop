@@ -1,32 +1,57 @@
 <%- include('partials/header') -%>
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">Help Others Find You</h1>
+      <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button class="btn btn-primary">Get Started</button>
+      <a class="btn btn-primary" href="/feed">View Directory</a>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-  <div class="row mt-5">
-      <div class="col-6">
+  <div class="">
+      <div class="">
           <div>
               <p><strong>User Name</strong>: <%= user.userName %></p>
               <p><strong>Email</strong>: <%= user.email %></p>
-              <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+             
           </div>
-          <div class="mt-5">
+          <div class="">
             <h2>Add a Business</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-              <div class="mb-3">
+              <div class="">
                   <label for="businessName" class="form-label">Business Name</label>
                   <input type="text" class="form-control" id="title" name="title">
               </div>
-                <div class="mb-3">
+                <div class="">
                   <label for="location" class="form-label">Location</label>
                   <input type="text" class="form-control" id="title" name="title">
               </div>
-                  <div class="mb-3">
-                  <label for="category" class="form-label">Category</label>
+              <div class="form-control">
+                <div class="input-group">
+                <select class="select select-bordered">
+                <option disabled selected>Pick category</option>
+                <option>Health & Beauty</option>
+                <option>Home & Garden</option>
+                <option>Tech Devices</option>
+                <option>Apparel</option>
+                <option>Pets</option>
+                </select>
+          
+              </div>
+            </div>
+                  <div class="">
+                  <label for="category" class="form-label">Website</label>
                   <input type="text" class="form-control" id="title" name="title">
               </div>
-              <div class="mb-3">
+              <div class="">
                 <label for="description" class="form-label">Description</label>
                 <textarea class="form-control" id="caption" name="caption"></textarea>
               </div>
-              <div class="mb-3">
+              <div class="">
                 <label for="imgUpload" class="form-label">Image</label>
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
@@ -34,21 +59,19 @@
             </form>
           </div>
       </div>
-      <div class="col-6">
+      <div class="">
         <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
+          <li class="">
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
           </li>
         <% } %>
         </ul>
-        <div class="row justify-content-center mt-5">
-          <a class="btn btn-primary" href="/feed">Return to Feed</a>
-        </div>  
       </div>  
     </div>
   </div>
 </div>
+
 <%- include('partials/footer') -%>

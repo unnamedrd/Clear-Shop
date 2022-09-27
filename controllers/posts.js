@@ -24,7 +24,7 @@ module.exports = {
       const post = await Post.findById(req.params.id);
       const comment = await Comment.find({ post: req.params.id });
 
-      res.render("post.ejs", { post: post, user: req.user, comment:comment });
+      res.render("post.ejs", { post: post, user: req.user });
     } catch (err) {
       console.log(err);
     }
@@ -37,6 +37,8 @@ module.exports = {
       await Post.create({
         name: req.body.name,
         location: req.body.location,
+        website: req.body.website,
+        category: req.body.category, 
         image: result.secure_url,
         cloudinaryId: result.public_id,
         description: req.body.description,

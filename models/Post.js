@@ -11,7 +11,7 @@ const PostSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,
@@ -19,13 +19,13 @@ const PostSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    require: true,
+    require: false,
   },
   cloudinaryId: {
     type: String,
     require: true,
   },
-  caption: {
+  website: {
     type: String,
     required: true,
   },

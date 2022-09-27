@@ -31,7 +31,7 @@ const PostSchema = new mongoose.Schema({
   },
   likes: {
     type: Number,
-    required: true,
+    required: false,
   },
   comments: {
     type: mongoose.Schema.Types.ObjectId,

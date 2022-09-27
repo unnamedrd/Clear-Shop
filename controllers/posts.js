@@ -38,11 +38,9 @@ module.exports = {
         name: req.body.name,
         location: req.body.location,
         website: req.body.website,
-        
         image: result.secure_url,
         cloudinaryId: result.public_id,
         description: req.body.description,
-        likes: 0,
         user: req.user.id,
       });
       console.log("Business has been added!");

@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
 
-<main class="containerflex flex-col justify-center items-center">
+<main class="m-4 container flex flex-col justify-center items-center">
   <div class="row justify-content-center">
     <section class="col-6 mt-5">
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
@@ -16,22 +16,23 @@
           >
           <input
             type="email"
-            class="form-control"
+            class="form-control input input-secondary input-bordered"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             name="email"
+           
           />
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
             type="password"
-            class="form-control"
+            class="form-control input input-secondary input-bordered"
             id="exampleInputPassword1"
             name="password"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-accent">Submit</button>
       </form>
     </section>
   </div>

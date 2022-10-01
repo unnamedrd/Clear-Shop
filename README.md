@@ -31,8 +31,11 @@ The live site/demo is here: https:// [insert link to live site]
 
 [Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
+![Screen Shot 2022-09-29 at 3 16 16 PM](https://user-images.githubusercontent.com/93551062/193387480-5cba9d9b-9ec9-4911-afa7-d6392347b0bf.png)
 
+![Screen Shot 2022-09-29 at 3 17 02 PM](https://user-images.githubusercontent.com/93551062/193387554-bafaea5b-6ab9-4a84-915b-f0e367bbe4ce.png)
 
+![Screen Shot 2022-09-29 at 3 16 42 PM](https://user-images.githubusercontent.com/93551062/193387612-ad9d1574-e650-4176-9624-39a2c2da5b4e.png)
 
 
 #### Project Requirements:  <a name="requirements"></a>
@@ -63,8 +66,8 @@ Extra
 
 
 ##### *User Journey* <a name="journey"></a>
-- User lands on page  
-- User browses product selection either by scroll or using menus
+- User authenicates 
+- Landing page includes buttons 
 - User selects product to add to cart
 - A user can    
 
@@ -104,18 +107,17 @@ In order to run the program please do the following:
 
 #### Learnings from Project:<a name="learnings"></a>
 
-I learned to allow ample time for debuggin because of x,y,z. 
 
 
 
 #### Known Bugs <a name="bugs"></a>
-- [ ] This features needs work
-- [ ] So does this one
+- [ ] Currently the directory page does not include a search function 
+- [ ] 
 
 
 #### Additional Features for future Development <a name="features"></a>
-- [ ] Dope feature #1
-- [ ] Dope feature #2 
+- [ ] Password Reset
+- [ ] 
 
 #### How to Contribute <a name="Contribute"></a>
 

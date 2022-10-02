@@ -61,7 +61,7 @@ Extra
 
 | Front-End | Back-End | Deploy |
 | --- | --- | --- |
- | ReactJS, HTML, CSS | Node, MongoDB | Netlify |
+ | Javascript, HTML, CSS | Node, MongoDB | Render |
 
 
 

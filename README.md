@@ -31,6 +31,7 @@ The live site/demo is here: https:// [insert link to live site]
 
 [Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
+![Screen Shot 2022-09-29 at 3 16 16 PM](https://user-images.githubusercontent.com/93551062/193387480-5cba9d9b-9ec9-4911-afa7-d6392347b0bf.png)
 
 #### Project Requirements:  <a name="requirements"></a>
 
@@ -55,13 +56,13 @@ Extra
 
 | Front-End | Back-End | Deploy |
 | --- | --- | --- |
- | ReactJS, HTML, CSS | Node, MongoDB | Netlify |
+ | Javascript, HTML, CSS | Node, MongoDB | Render |
 
 
 
 ##### *User Journey* <a name="journey"></a>
-- User lands on page  
-- User browses product selection either by scroll or using menus
+- User authenicates 
+- Landing page includes buttons 
 - User selects product to add to cart
 - A user can    
 
@@ -101,18 +102,17 @@ In order to run the program please do the following:
 
 #### Learnings from Project:<a name="learnings"></a>
 
-I learned to allow ample time for debuggin because of x,y,z. 
 
 
 
 #### Known Bugs <a name="bugs"></a>
-- [ ] This features needs work
-- [ ] So does this one
+- [ ] Currently the directory page does not include a search function 
+- [ ] 
 
 
 #### Additional Features for future Development <a name="features"></a>
-- [ ] Dope feature #1
-- [ ] Dope feature #2 
+- [ ] Password Reset
+- [ ] 
 
 #### How to Contribute <a name="Contribute"></a>
 

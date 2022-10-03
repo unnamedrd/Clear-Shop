@@ -32,9 +32,6 @@ The live site/demo is here: https:// [insert link to live site]
 [Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
 
-
-
-
 #### Project Requirements:  <a name="requirements"></a>
 
 MVP Features 

@@ -60,9 +60,13 @@
 
      <% posts.forEach( el=> { %>
       <div class=" m-3 card w-96 bg-base-100 shadow-xl">
-          <p><%= el.name %></p>
-     <p><%= el.location %></p>
-    <p><%= el.website %></p>
+         <a href= "<%=el.website %>" target="_blank">
+             <figure><img src="https://images.pexels.com/photos/3758495/pexels-photo-3758495.jpeg" alt="Eco Bed" /></figure>
+       <p><%= el.name %></p>
+      <p><%= el.location %></p>
+     <p><%= el.description %></p>
+         </a>
+        
 
       </div>
   

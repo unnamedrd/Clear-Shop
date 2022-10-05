@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
 
-  <div class="container flex ">
+  <div class="container flex flex-wrap ">
 
 
  
@@ -56,18 +56,23 @@
   </div>
   </a>
  </div>
- </div>
+ 
 
      <% posts.forEach( el=> { %>
       <div class=" m-3 card w-96 bg-base-100 shadow-xl">
          <a href= "<%=el.website %>" target="_blank">
-             <figure><img src="https://images.pexels.com/photos/3758495/pexels-photo-3758495.jpeg" alt="Eco Bed" /></figure>
-       <p><%= el.name %></p>
-      <p><%= el.location %></p>
-     <p><%= el.description %></p>
-         </a>
-        
+             <figure><img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Eco Bed" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">
+            <%= el.name %>
+            <div class="badge badge-secondary">NEW</div>
+            </h2>
 
+               
+                <p><%= el.location %></p>
+              <p><%= el.description %></p>
+        </div>     
+         </a>
       </div>
   
     <% }) %>
@@ -84,5 +89,5 @@
         </ul>
     </div>
 
- 
+ </div>
 <%- include('partials/footer') -%>

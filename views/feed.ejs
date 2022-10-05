@@ -59,9 +59,13 @@
  </div>
 
      <% posts.forEach( el=> { %>
-    <p><%= el.name %></p>
+      <div class=" m-3 card w-96 bg-base-100 shadow-xl">
+          <p><%= el.name %></p>
      <p><%= el.location %></p>
     <p><%= el.website %></p>
+
+      </div>
+  
     <% }) %>
 
   <div class="row justify-content-center mt-5">

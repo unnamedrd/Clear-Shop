@@ -1,4 +1,4 @@
-const Comment = require("../models/Comments");
+const Review = require("../models/Reviews");
 //const cloudinary = require("../middleware/cloudinary");
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
         user: req.user.id,
         post: req.body.post
       });
-      console.log("Comment has been added!");
+      console.log("Review has been added!");
       res.redirect("/profile");
     } catch (err) {
       console.log(err);

@@ -29,7 +29,6 @@ The live site/demo is here: https://gray-super-blackbuck.cyclic.app
 ## PROCESS <a name="process"></a>
 ## Design <a name="design"></a>
 
-[Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
 ![Screen Shot 2022-09-29 at 3 16 16 PM](https://user-images.githubusercontent.com/93551062/193387480-5cba9d9b-9ec9-4911-afa7-d6392347b0bf.png)
 

@@ -2,12 +2,12 @@ const Review = require("../models/Reviews");
 //const cloudinary = require("../middleware/cloudinary");
 
 module.exports = {
-  createComment: async (req, res) => {
+  createReview: async (req, res) => {
     try {
       // Upload image to cloudinary
       //const result = await cloudinary.uploader.upload(req.file.path);
 
-      await Comment.create({
+      await Review.create({
         comment: req.body.comment,
         likes: 0,
         user: req.user.id,
@@ -19,9 +19,9 @@ module.exports = {
       console.log(err);
     }
   },
-  likeComment: async (req, res) => {
+  likeReview: async (req, res) => {
     try {
-      await Comment.findOneAndUpdate(
+      await Review.findOneAndUpdate(
         { _id: req.params.id },
         {
           $inc: { likes: 1 },
@@ -33,15 +33,15 @@ module.exports = {
       console.log(err);
     }
   },
-  deleteComment: async (req, res) => {
+  deleteReview: async (req, res) => {
     try {
       // Find Comment by id
-      let Comment = await Comment.findById({ _id: req.params.id });
+      let Review = await Review.findById({ _id: req.params.id });
       // Delete image from cloudinary
       //await cloudinary.uploader.destroy(Comment.cloudinaryId);
       // Delete Comment from db
-      await Comment.remove({ _id: req.params.id });
-      console.log("Deleted Comment");
+      await Review.remove({ _id: req.params.id });
+      console.log("Deleted Review");
       res.redirect("/profile");
     } catch (err) {
       res.redirect("/profile");

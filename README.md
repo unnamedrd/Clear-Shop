@@ -19,7 +19,7 @@
 ### Overview  <a name="overview"></a>: Clear Shop is a full stack application that allows users to search a directory of business that are certified B corps 
 
 Please refer to the demo for sample output. 
-The live site/demo is here: https:// [insert link to live site]
+The live site/demo is here: https://gray-super-blackbuck.cyclic.app
 
 **Project Timeline : 1 month** 
 
@@ -29,22 +29,22 @@ The live site/demo is here: https:// [insert link to live site]
 ## PROCESS <a name="process"></a>
 ## Design <a name="design"></a>
 
-[Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
 ![Screen Shot 2022-09-29 at 3 16 16 PM](https://user-images.githubusercontent.com/93551062/193387480-5cba9d9b-9ec9-4911-afa7-d6392347b0bf.png)
 
 #### Project Requirements:  <a name="requirements"></a>
 
 MVP Features 
-- Browse Product Page
-- Shopping Cart mechanism 
-- Check Out Flow
+- Add business to directory 
+- Browse Listed Business 
+- Authentication
 
 
 Extra
-- Search Products functionality 
-- LogIn/Authentication 
-- Quick Shop WorkFlow
+- Create profile page for each business 
+- Review Feature 
+- Upload Image feature
+- Search Feature 
 
 
 
@@ -56,20 +56,21 @@ Extra
 
 | Front-End | Back-End | Deploy |
 | --- | --- | --- |
- | Javascript, HTML, CSS | Node, MongoDB | Render |
+ | Javascript, HTML, CSS | Node, MongoDB | Cyclic |
 
 
 
 ##### *User Journey* <a name="journey"></a>
 - User authenicates 
-- Landing page includes buttons 
-- User selects product to add to cart
+- Landing page includes B corporation certifcation content and links to business directory add add a business form page
+- User selects if they want to add a business or view current business 
 - A user can    
 
-        - * Checks out via log in
-        - * Checks out as guest
+        - * Use form to add a B-corp certified business to the directory 
+        - * Browse the directory for current businesses
+        - * Leave a review for a businsess
         
-- User fills out form
+
 
 
 #### Installation <a name="installation"></a>

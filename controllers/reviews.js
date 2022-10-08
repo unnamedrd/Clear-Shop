@@ -9,12 +9,11 @@ module.exports = {
 
       await Review.create({
         review: req.body.review,
-        likes: 0,
         user: req.user.id,
         post: req.body.post
       });
       console.log("Review has been added!");
-      res.redirect("/profile");
+      res.redirect("/post");
     } catch (err) {
       console.log(err);
     }

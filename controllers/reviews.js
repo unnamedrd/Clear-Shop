@@ -8,7 +8,7 @@ module.exports = {
       //const result = await cloudinary.uploader.upload(req.file.path);
 
       await Review.create({
-        comment: req.body.comment,
+        review: req.body.review,
         likes: 0,
         user: req.user.id,
         post: req.body.post

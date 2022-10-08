@@ -1,12 +1,8 @@
 const mongoose = require("mongoose");
 
 const ReviewSchema = new mongoose.Schema({
-  comment: {
+  review: {
     type: String,
-    required: true,
-  },
-  likes: {
-    type: Number,
     required: true,
   },
   post: {

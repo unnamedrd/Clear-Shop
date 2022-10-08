@@ -46,6 +46,53 @@
   </div>
 
 <!--Add Review Form-->
+
+<div class="container mt-8 flex flex-col justify-center items-center">
+ 
+      <div class="card-body m-3 card w-96 bg-base-100 shadow-xl">
+<div class=""> 
+            <h2 class ="text-5xl font-bold">Add a Review</h2>
+            <form action="/reviews/createReview"  method="POST"> <!--enctype="multipart/form-data"-->
+              <div class="">
+                  <label for="name" class="mt-3 form-label">Business Name</label>
+                  <input type="text" class=" mt-3 form-control" id="name" name="name">
+              </div>
+                <div class="">
+                  <label for="location" class="mt-3 form-label">Location</label>
+                  <input type="text" class="mt-3 form-control" id="location" name="location">
+              </div>
+              <!-- 
+              <div class="form-control">
+                <div class="input-group">
+                <select class="select select-bordered">
+                <option disabled selected>Pick category</option>
+                <option value="Health & Beauty">Health & Beauty</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Tech Devices">Tech Devices</option>
+                <option value="Apparel">Apparel</option>
+                <option value="Pets">Pets</option>
+                </select>
+          
+              </div>-->
+            </div>
+                  <div class="">
+                  <label for="website" class="mt-3 form-label">Website</label>
+                  <input type="text" class="mt-3 form-control" id="website" name="website">
+              </div>
+              <div class="">
+                <label for="description" class=" mt-3 form-label">Description</label>
+                <textarea class="mt-3 form-control" id="description" name="description"></textarea>
+              </div>
+              <!--<div class="">
+                <label for="imgUpload" class="mt-3 form-label">Image</label>
+                <input type="file" class="mt-3 form-control" id="imageUpload" name="file">
+              </div>-->
+              <button type="submit" class="m-2 btn btn-primary" value="Upload">Submit</button>
+            </form>
+          </div>
+      </div>
+    
+    </div>
 <h2>Add a Review</h2>
 <form action="/reviews/createReview" method="POST">
   <div class="mb-3">

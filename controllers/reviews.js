@@ -14,7 +14,7 @@ module.exports = {
       });
      
       console.log("Review has been added!");
-      res.redirect(`/post/${req.params.id}`);
+      res.redirect("/feed");
     } catch (err) {
       console.log(err);
     }

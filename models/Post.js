@@ -33,9 +33,9 @@ const PostSchema = new mongoose.Schema({
     type: Number,
     required: false,
   },
-  comments: {
+  reviews: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Comment",
+    ref: "Reviews",
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,

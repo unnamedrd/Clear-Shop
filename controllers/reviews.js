@@ -27,7 +27,7 @@ module.exports = {
         }
       );
       console.log("Likes +1");
-      res.redirect(`/Comment/${req.params.id}`);
+      res.redirect(`/Review/${req.params.id}`);
     } catch (err) {
       console.log(err);
     }
@@ -41,9 +41,9 @@ module.exports = {
       // Delete Comment from db
       await Review.remove({ _id: req.params.id });
       console.log("Deleted Review");
-      res.redirect("/profile");
+      res.redirect("/feed");
     } catch (err) {
-      res.redirect("/profile");
+      res.redirect("/feed");
     }
   },
 };

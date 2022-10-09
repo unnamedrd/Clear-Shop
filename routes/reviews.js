@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const upload = require("../middleware/multer");
+//const upload = require("../middleware/multer");
 const reviewsController = require("../controllers/reviews");
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 //Post Routes - simplified for now
-//router.get("/:id", ensureAuth, commentsController.getPost);
+
+//router.get("/:id", ensureAuth, reviewsController.getReview);
 
 router.post("/createReview", reviewsController.createReview);
 

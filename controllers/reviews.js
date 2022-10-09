@@ -12,8 +12,9 @@ module.exports = {
         user: req.user.id,
         post: req.body.post
       });
+     
       console.log("Review has been added!");
-      res.redirect("/post");
+      res.redirect(`/post/${req.params.id}`);
     } catch (err) {
       console.log(err);
     }

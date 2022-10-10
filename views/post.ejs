@@ -12,12 +12,13 @@
   
 <!--Add Review Form-->
 
-<div class="container mt-8 flex flex-col justify-center items-center">
+
+      <div class="container mt-8 flex flex-col justify-center items-center">
  
       <div class="card-body m-3 card w-96 bg-base-100 shadow-xl">
      
       
-<div class=""> 
+        <div class=""> 
             <h2 class ="text-5xl font-bold">Add a Review</h2>
             <form action="/review/createReview"  method="POST"> 
              <p class ="mt-8">
@@ -47,16 +48,51 @@
               <button type="submit" class="m-2 btn btn-primary" value="Upload">Submit</button>
             </form>
           </div>
-      </div>
-    
-<div>
-    <% review.forEach( el=> { %>
-    <p><%= el.review %></p>
-    <% }) %>
+  
 </div>
 
+   
+    
+<div>
+ <div class="overflow-x-auto w-full">
+    <table class="table w-50 justify-center ">
+   <thead>
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" class="checkbox" />
+          </label>
+        </th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Review</th>
+        <th></th>
+      </tr>
+    </thead>
+    <% review.forEach( el=> { %>
+    <!-- head -->
+   
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" class="checkbox" />
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+              <div class="font-bold"><%=el.userName%></div>
+          </div>
+        </td>
+         <td><%= el.createdAt %></td>
+        <td><%= el.review %></td>
+      </tr>
+    </tbody>
   
-    </div>
+    <% }) %>
+  </div>
+</div>
+</div>
+  
 
-  
-<%- include('partials/footer') -%>

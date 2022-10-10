@@ -25,7 +25,7 @@ module.exports = {
       const review = await Review.find({ post: req.params.id });
        //
       console.log("getting the info")
-      res.render("post.ejs", { post: post, user: req.user });
+      res.render("post.ejs", { post: post, user: req.user, review: review, });
     } catch (err) {
       console.log(err);
     }

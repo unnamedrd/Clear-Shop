@@ -92,12 +92,12 @@
       <tr>
         <th>
           <label>
-           <button class="btn btn-primary">Delete</button>
+           <button class="btn btn-primary" class="delBtn">Delete</button>
           </label>
         </th>
         <td>
           <div class="flex items-center space-x-3">
-              <div class="font-bold"><%=el.userName%></div>
+              <div class="font-bold"><%=user.userName%></div>
           </div>
         </td>
          <td><%= el.createdAt.toDateString() %></td>
@@ -109,5 +109,6 @@
   </div>
 </div>
 </div>
+<script src="js/post.js"></script>
 </body>
 </html>

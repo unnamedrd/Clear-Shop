@@ -12,15 +12,17 @@
 
 </head>
 
+
+
 <%- include('partials/postHeader') -%>
 <body>
-<div class="bg-white py-12" style="background-image: url("https://<%= post.website %>")";>
+<div class="bg-white py-1 h-48 bg-[url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&w=1200')]";>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900"><a
+      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-white"><a
           href ="https://<%= post.website %>">
       <%= post.website %></a></p>
-      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"><%= post.description %></p>
+      <p class="mt-4 max-w-2xl text-xl text-white lg:mx-auto"><%= post.description %></p>
     </div>
   </div>   
  

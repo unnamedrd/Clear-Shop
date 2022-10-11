@@ -1,5 +1,19 @@
-<%- include('partials/postHeader') -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--FontAwesome and Daisy UI-->
+ 
+  <script src="https://kit.fontawesome.com/46ad77d0fe.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 
+</head>
+
+<%- include('partials/postHeader') -%>
+<body>
 <div class="bg-white py-12" style="background-image: url()";>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
@@ -7,9 +21,14 @@
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"><%= post.description %></p>
     </div>
   </div>   
-    <a class="btn btn-primary" href="/feed">Return to Directory</a>
+ 
 </div>
-  
+
+   <a class="btn btn-primary m-8" href="/feed">Return to Directory</a>
+  <i class="fa-regular fa-trash-can"></i>
+
+
+
 <!--Add Review Form-->
 
 
@@ -50,11 +69,11 @@
           </div>
   
 </div>
-
+<!--End Form-->
    
-    
+    <!--Table of Reviews-->
 <div>
- <div class="overflow-x-auto w-full">
+ <div class="overflow-x-auto w-full flex items-center m-10">
     <table class="table w-50 justify-center ">
    <thead>
       <tr>
@@ -77,7 +96,7 @@
       <tr>
         <th>
           <label>
-            <input type="checkbox" class="checkbox" />
+           
           </label>
         </th>
         <td>
@@ -94,5 +113,5 @@
   </div>
 </div>
 </div>
-  
-
+</body>
+</html>

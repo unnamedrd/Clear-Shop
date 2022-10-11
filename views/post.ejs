@@ -100,7 +100,7 @@
               <div class="font-bold"><%=el.userName%></div>
           </div>
         </td>
-         <td><%= el.createdAt %></td>
+         <td><%= el.createdAt.toDateString() %></td>
         <td><%= el.review %></td>
       </tr>
     </tbody>

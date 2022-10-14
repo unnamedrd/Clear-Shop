@@ -53,7 +53,9 @@
       <div class="badge badge-outline">Home</div> 
       <div class="badge badge-outline">Sleep Products</div>
     </div>
+   
   </div>
+     <button class="btn btn-primary fa fa-trash" type="submit"></button>
   </a>
  </div>
  
@@ -71,7 +73,15 @@
                
                 <p><%= el.location %></p>
               <p><%= el.description %></p>
-        </div>     
+        </div>
+           <form
+          action="/post/deletePost/<%= el.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+          <button class=" m-3 btn btn-primary fa fa-trash del" type="submit"></button>
+        </form>
+             
          </a>
       </div>
   

@@ -19,7 +19,7 @@
 <div class="bg-white py-1 h-48 bg-[url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&w=1200')]";>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-white"><a
+      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-white  hover:text-yellow-400"><a
           href ="https://<%= post.website %>">
       <%= post.website %></a></p>
       <p class="mt-4 max-w-2xl text-xl text-white lg:mx-auto"><%= post.description %></p>
@@ -49,11 +49,11 @@
              </p>
         
              <div class="rating gap-1 mt-2">
-              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
-              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
-              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+              <input type="radio" name="rating-3" value = 1 class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" value = 2 class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" value = 3 class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" value = 4 class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" value = 5 class="mask mask-heart bg-green-400" />
             </div> 
               <!--enctype="multipart/form-data"-->
             </div>
@@ -95,9 +95,18 @@
       <!-- row 1 -->
       <tr>
         <th>
-          <label>
-           <button class="btn btn-primary" class="delBtn">Delete</button>
-          </label>
+        
+        <form
+          action="/review/deleteReview/<%= review.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+        
+           <button class="btn btn-primary" id="delBtn">Delete</button>
+         
+        </form>
+       
+        
         </th>
         <td>
           <div class="flex items-center space-x-3">
@@ -113,6 +122,6 @@
   </div>
 </div>
 </div>
-<script src="js/post.js"></script>
+<script src="public/js/post.js"></script>
 </body>
 </html>

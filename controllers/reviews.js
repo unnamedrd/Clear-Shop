@@ -36,11 +36,10 @@ module.exports = {
   deleteReview: async (req, res) => {
     try {
       // Find Comment by id
-      let Review = await Review.findById({ _id: req.params.id });
-      // Delete image from cloudinary
-      //await cloudinary.uploader.destroy(Comment.cloudinaryId);
-      // Delete Comment from db
-      await Review.remove({ _id: req.params.id });
+      let review = await Review.findById({ _id: req.params.id });
+      
+      // Delete Review from db
+      await review.remove({ _id: req.params.id });
       console.log("Deleted Review");
       res.redirect("/feed");
     } catch (err) {

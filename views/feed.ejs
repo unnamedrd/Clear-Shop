@@ -74,11 +74,11 @@
                 <p><%= el.location %></p>
               <p><%= el.description %></p>
         </div>
-           <form
+          <!--<form
           action="/post/deletePost/<%= el.id %>?_method=DELETE"
           method="POST"
           class="col-3"
-        >
+        >-->
           <button class=" m-3 btn btn-primary fa fa-trash del" type="submit"></button>
         </form>
              
@@ -100,4 +100,5 @@
     </div>-->
 
  </div>
+ <script src="/js/post.js"></script>
 <%- include('partials/footer') -%>

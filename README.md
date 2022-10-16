@@ -36,15 +36,17 @@ The live site/demo is here: https://gray-super-blackbuck.cyclic.app
 
 MVP Features 
 - Add business to directory 
-- Browse Listed Business 
+- Directory page of listed businesses 
 - Authentication
-
+- Create profile page for each business 
+ - Review Feature 
 
 Extra
-- Create profile page for each business 
-- Review Feature 
-- Upload Image feature
+
+- Ratings Feature 
 - Search Feature 
+- Filter Feature 
+- Categories to Form
 
 
 

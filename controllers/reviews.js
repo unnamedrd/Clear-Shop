@@ -41,7 +41,7 @@ module.exports = {
       // Delete Review from db
       await review.remove({ _id: req.params.id });
       console.log("Deleted Review");
-      res.redirect("/feed");
+      res.redirect(`/post/${req.params.id}`);
     } catch (err) {
       res.redirect("/feed");
     }

@@ -75,7 +75,8 @@ module.exports = {
       console.log("Deleted Post");
       res.redirect("/profile");
     } catch (err) {
-      res.redirect("/profile");
+      console.log(err)
+      res.redirect("/feed");
     }
   },
 };

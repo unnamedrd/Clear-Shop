@@ -1,4 +1,5 @@
 const deleteBtn = document.querySelectorAll("#delBtn");
+const ratingStars = [...document.querySelectorAll(".mask-heart")];
 
 Array.from(deleteBtn).forEach((el) => {
   el.addEventListener("click", deleteReview);

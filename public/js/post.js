@@ -10,3 +10,12 @@ function deleteReview() {
     const reviewId = this.parentNode.dataset.id
     console.log("The delete button was clicked")
 }
+
+function getRating(stars) {
+  let inactiveStars = ""
+  let activeStars = ""
+
+  let starCount = ratingStars.length
+
+  let i;
+}

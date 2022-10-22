@@ -12,10 +12,8 @@ function deleteReview() {
 }
 
 function getRating(stars) {
-  let inactiveStars = ""
-  let activeStars = ""
-
-  let starCount = ratingStars.length
-
+  let inactiveStars = "mask mask-heart ";
+  //let activeStars = " mask mask-heart checked "; //color it inactive
+  let starsLength = stars.length //assigns variable to length of parameters 
   let i;
 }

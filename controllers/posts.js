@@ -39,6 +39,7 @@ module.exports = {
         name: req.body.name,
         location: req.body.location,
         website: req.body.website,
+        category: req.body.category,
         //image: result.secure_url,
        //cloudinaryId: result.public_id
         description: req.body.description,

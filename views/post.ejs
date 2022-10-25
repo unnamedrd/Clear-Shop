@@ -74,14 +74,50 @@
   
 </div>
 <!--End Form-->
-
+<div>
  <% review.forEach( el=> { %>
- 
+  <div class='flex items-center justify-center min-h-screen'>  <div class="rounded-xl border p-5 shadow-md w-9/12 bg-white">
+    <div class="flex w-full items-center justify-between border-b pb-3">
+      <div class="flex items-center space-x-3">
+        <div class="h-8 w-8 rounded-full bg-slate-400 bg-[url('https://i.pravatar.cc/32')]"></div>
+        <div class="text-lg font-bold text-slate-700"><%=user.userName%></div>
+      </div>
+      <div class="flex items-center space-x-8">
+          <form
+          action="/review/deleteReview/<%= el.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+           <button class="btn btn-primary" id="delBtn">Delete</button>
+         
+        </form>
+       
+        <div class="text-xs text-neutral-500"><%= el.createdAt.toDateString() %></div>
+      </div>
+    </div>
+
+    <div class="mt-4 mb-6">
+      <div class="mb-3 text-xl font-bold">Nulla sed leo tempus, feugiat velit vel, rhoncus neque?</div>
+      <div class="text-sm text-neutral-600"> <%= el.review %></div>
+    </div>
+
+    <div>
+      <div class="flex items-center justify-between text-slate-500">
+        <div class="flex space-x-4 md:space-x-8">
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <% }) %>
 
     <!--Table of Reviews-->
 <div>
+
+
  <div class="overflow-x-auto w-full flex items-center m-10">
     <table class="table w-50 justify-center">
    <thead class="bg-[#fecaca]">
@@ -93,6 +129,7 @@
         <th></th>
       </tr>
     </thead>
+
     <% review.forEach( el=> { %>
     <!-- head -->
    
@@ -109,12 +146,6 @@
          
         </form>
         </th>
-     
-
-    <div class="mt-4 mb-6">
-   
-      <div class="text-sm text-xl font-bold"><%= el.review %></div>
-    </div>
         <td>
           <div class="flex items-center space-x-3">
               <div class="font-bold"><%=user.userName%></div>
@@ -124,9 +155,9 @@
         <td><%= el.review %></td>
       </tr>
     </tbody>
-  
     <% }) %>
   </div>
+
 </div>
 </div>
 <script src="public/js/post.js"></script>

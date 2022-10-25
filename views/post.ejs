@@ -74,7 +74,12 @@
   
 </div>
 <!--End Form-->
-   
+
+ <% review.forEach( el=> { %>
+ 
+
+<% }) %>
+
     <!--Table of Reviews-->
 <div>
  <div class="overflow-x-auto w-full flex items-center m-10">
@@ -95,19 +100,21 @@
       <!-- row 1 -->
       <tr>
         <th>
-        
         <form
           action="/review/deleteReview/<%= el.id %>?_method=DELETE"
           method="POST"
           class="col-3"
         >
-        
            <button class="btn btn-primary" id="delBtn">Delete</button>
          
         </form>
-       
-        
         </th>
+     
+
+    <div class="mt-4 mb-6">
+   
+      <div class="text-sm text-xl font-bold"><%= el.review %></div>
+    </div>
         <td>
           <div class="flex items-center space-x-3">
               <div class="font-bold"><%=user.userName%></div>

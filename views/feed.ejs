@@ -61,7 +61,7 @@
      <% posts.forEach( el=> { %>
       <div class=" m-3 card w-96 bg-base-100 shadow-xl" data-id="<%=el._id%>">
          <a href= "/post/<%=el._id %>" target="_blank">
-             <figure><img src="https://images.pexels.com/photos/421999/pexels-photo-421999.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Eco Bed" /></figure>
+             <figure><img src="https://images.unsplash.com/photo-1563697092941-f17038b46152?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWNvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="Eco Bed" /></figure>
         <div class="card-body">
             <h2 class="card-title">
             <%= el.name %>
@@ -72,7 +72,7 @@
                 <p><%= el.location %></p>
               <p><%= el.description %></p>
         </div>
-         
+          </a>
          <!--
           <form
           action="/post/deletePost/<%= el.id %>?_method=DELETE"
@@ -83,10 +83,11 @@
 
       
           <button class=" m-3 btn btn-primary fa fa-trash del" type="submit"></button>
-           <span class="del"> Delete </span>
+          <button class=" m-3 btn btn-primary edit" type="submit">edit</button>
+          
         </form>
              
-         </a>
+        
       </div>
   
     <% }) %>

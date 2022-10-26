@@ -84,15 +84,13 @@
         <div class="text-lg font-bold text-slate-700"><%=user.userName%></div>
       </div>
       <div class="flex items-center space-x-8">
-          <form
+        <form
           action="/review/deleteReview/<%= el.id %>?_method=DELETE"
           method="POST"
-          class="col-3"
-        >
-           <button class="btn btn-primary" id="delBtn">Delete</button>
-         
+          class="col-3">
+          <button class="btn btn-primary" id="delBtn">Delete</button>
+      
         </form>
-       
         <div class="text-xs text-neutral-500"><%= el.createdAt.toDateString() %></div>
       </div>
     </div>
@@ -116,13 +114,11 @@
 
     <!--Table of Reviews-->
 <div>
-
-
  <div class="overflow-x-auto w-full flex items-center m-10">
     <table class="table w-50 justify-center">
    <thead class="bg-[#fecaca]">
       <tr>
-         <th>Delete</th>
+        <th>Delete</th>
         <th>Name</th>
         <th>Date</th>
         <th>Review</th>

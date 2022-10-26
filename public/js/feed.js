@@ -1,8 +1,19 @@
 const deleteBtn = document.querySelectorAll(".del")
+const editBtn = document.querySelectorAll(".m-3 btn btn-primary edit");
 
 Array.from(deleteBtn).forEach((el) => {
     el.addEventListener('click', deleteItem)
 })
+
+Array.from(editBtn).forEach((el) => {
+  el.addEventListener('click', editItem)
+})
+
+function editItem() {
+  console.log("you clicked the edit button");
+}
+  
+
 
 async function deleteItem() {
   console.log("you clicked something");

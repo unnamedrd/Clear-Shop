@@ -1,15 +1,15 @@
-const deleteBtn = document.querySelectorAll("#delBtn");
-const ratingStars = [...document.querySelectorAll(".mask-heart")];
-
-Array.from(deleteBtn).forEach((el) => {
-  el.addEventListener("click", deleteReview);
-});
+//const deleteBtn = document.querySelectorAll("#delBtn");
+const ratingStars = [...document.getElementById("rating")];
+const addReviewBtn = document.querySelector("#addReview")
 
 
-function deleteReview() {
-    const reviewId = this.parentNode.dataset.id
-    console.log("The delete button was clicked")
+addReviewBtn.addEventListener('click', showReviewForm)
+
+function showReviewForm() {
+  console.log("show review form")
 }
+
+
 
 function getRating(stars) {
   let inactiveStars = "mask mask-heart ";

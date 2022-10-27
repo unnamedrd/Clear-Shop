@@ -4,10 +4,9 @@ const testBtn = document.querySelector("#test").style.display = "none"
 
 //document.querySelector('#Payout').style.display = "none"
 
-
-testBtn.addEventListener("click", function (e) {
-  console.log("hey that is a button!")
-})
+//testBtn.addEventListener("click", function (e) {
+ // console.log("hey that is a button!")
+//})
 
 /*Array.from(deleteBtn).forEach((el) => {
   el.addEventListener('click', function (e) {

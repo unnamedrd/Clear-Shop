@@ -16,7 +16,7 @@
 
 <%- include('partials/postHeader') -%>
 <body>
-<div class="bg-white py-1 h-48 bg-[url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&w=1200')]";>
+<div class="bg-white py-1 h-auto bg-pink-500";>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-white  hover:text-yellow-400"><a
@@ -24,16 +24,7 @@
       <%= post.website %></a></p>
       <p class="mt-4 max-w-2xl text-xl text-white lg:mx-auto"><%= post.description %></p>
     </div>
-  </div>   
- 
-</div>
-
-   <a class="btn btn-primary m-8" href="/feed">Return to Directory</a>
-  <i class="fa-regular fa-trash-can"></i>
-
-
-
-<!--Add Review Form-->
+    <!--Add Review Form-->
 
 
       <div class="container mt-8 flex flex-col justify-center items-center">
@@ -72,8 +63,24 @@
             </form>
           </div>
   
-</div>
+   </div>
+   <div class ="mt-8 flex flex-row justify-center items-center">
+    <a class="btn btn-primary m-8" href="/feed">Return to Directory</a>
+    <a class="btn btn-primary m-8">Add Your Review</a>
+   </div>
+   
+  </div>  
 <!--End Form-->
+ 
+ 
+</div>
+
+  
+ 
+
+
+
+
 <div>
  <% review.forEach( el=> { %>
   <div class= 'overflow-x-auto w-full flex items-center m-10'> <!--'flex items-center justify-center min-h-screen'-->

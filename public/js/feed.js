@@ -2,8 +2,6 @@ const deleteBtn = document.querySelectorAll("#del")
 const editBtn = document.querySelectorAll("#edit");
 const testBtn = document.querySelector("#test").style.display = "none"
 
-//document.querySelector('#Payout').style.display = "none"
-
 //testBtn.addEventListener("click", function (e) {
  // console.log("hey that is a button!")
 //})
@@ -27,15 +25,7 @@ const testBtn = document.querySelector("#test").style.display = "none"
       console.log(err)
     }
     })
-})*/
-
-Array.from(editBtn).forEach((button) => {
-  button.addEventListener('click', function (e) {
-    e.preventDefault()
-    console.log("you clicked the edit button");
-  })
 })
-
 
 async function deleteItem() {
   console.log("you clicked something");
@@ -55,4 +45,4 @@ async function deleteItem() {
     console.log(err)
   }
  
-}
+}*/

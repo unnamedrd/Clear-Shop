@@ -83,9 +83,9 @@
               <p><%= el.description %></p>
         </div>
           </a>
-       
+      
           <form
-          action="/post/deletePost/<%= el.id %>?_method=DELETE"
+          action="/posts/deletePost/<%= el.id %>?_method=DELETE"
           method="POST"
           class="col-3"
           >
@@ -94,7 +94,10 @@
           <button class=" m-3 btn btn-primary fa fa-trash" id ="del" type="submit"></button>
         
         </form>
-             <button class=" m-3 btn btn-primary" id = "edit" type="submit">edit</button>  
+        <!--
+             <button class=" m-3 btn btn-primary" id = "edit" type="submit">edit</button> 
+        -->
+             
         
       </div>
   

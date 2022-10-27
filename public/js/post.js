@@ -10,7 +10,6 @@ function showReviewForm() {
 }
 
 
-
 function getRating(stars) {
   let inactiveStars = "mask mask-heart ";
   //let activeStars = " mask mask-heart checked "; //color it inactive

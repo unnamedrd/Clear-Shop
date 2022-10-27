@@ -10,6 +10,7 @@ module.exports = {
 
       await Review.create({
         review: req.body.review,
+        rating: req.body.rating,
         user: req.user.id,
         post: req.body.post
       });

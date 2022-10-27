@@ -1,7 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
 <%- include('partials/header') -%>
 
   <div class="container flex flex-wrap ">
-
+<button class=" m-3 btn btn-primary" id = "test" type="submit">test this</button>
 <!--Card1-->
     <div class="m-3 card w-96 bg-base-100 shadow-xl">
         <a href="https://samara-co.com/en" target="_blank">
@@ -67,9 +79,7 @@
             <%= el.name %>
             <div class="badge badge-secondary">NEW</div>
             </h2>
-
-               
-                <p><%= el.location %></p>
+              <p><%= el.location %></p>
               <p><%= el.description %></p>
         </div>
           </a>
@@ -82,8 +92,8 @@
          --> 
 
       
-          <button class=" m-3 btn btn-primary fa fa-trash del" type="submit"></button>
-          <button class=" m-3 btn btn-primary edit" type="submit">edit</button>
+          <button class=" m-3 btn btn-primary fa fa-trash" id ="del" type="submit"></button>
+          <button class=" m-3 btn btn-primary" id = "edit" type="submit">edit</button>
           
         </form>
              
@@ -105,5 +115,8 @@
     </div>-->
 
  </div>
- <script src="../public/js/feed.js"></script>
-<%- include('partials/footer') -%>
+ <script src="/js/feed.js"></script>
+
+
+</body>
+</html>

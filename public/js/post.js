@@ -1,13 +1,19 @@
-//const deleteBtn = document.querySelectorAll("#delBtn");
-const ratingStars = [...document.getElementById("rating")];
+//const ratingStars = [...document.getElementById("rating")];
 const addReviewBtn = document.querySelector("#addReview")
+const form = document.querySelector("#reviewForm");
 
+//form.style.display = "none"
 
-addReviewBtn.addEventListener('click', showReviewForm)
-
-function showReviewForm() {
-  console.log("show review form")
+addReviewBtn.addEventListener("click", addReview)
+function addReview() {
+  if (form.style.display == "none") {
+       
+       form.style.display == 'block'
+  } else {
+    form.style.display = "none"
+ }
 }
+
 
 
 function getRating(stars) {

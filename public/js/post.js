@@ -7,8 +7,7 @@ const form = document.querySelector("#reviewForm");
 addReviewBtn.addEventListener("click", addReview)
 function addReview() {
   if (form.style.display == "none") {
-       
-       form.style.display == 'block'
+       form.style.backgroundColor = "blue"
   } else {
     form.style.display = "none"
  }

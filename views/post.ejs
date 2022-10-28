@@ -28,6 +28,21 @@
         <div class ="mt-8 flex flex-row justify-center items-center">
     <a class="btn btn-primary m-8" href="/feed">Return to Directory</a>
     <a class="btn btn-primary m-8" id="addReview">Add Your Review</a>
+      
+        <form
+          action="/post/deletePost/<%= post.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+        <button class="btn btn-primary m-8" id="delete" type="submit">Delete Profile</button>
+        
+        </form>
+
+        <a class="btn btn-primary m-8" id="edit">Edit Profile</a>
+       
+
+      
+        
    </div>
 
       <div class="container mt-8 flex flex-col justify-center items-center">

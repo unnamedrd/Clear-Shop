@@ -82,17 +82,28 @@ module.exports = {
   },
 };
 
-deleteReview: async (req, res) => {
+searchFeed: async (req, res) => {
+  let collection 
   try {
-    // Find Comment by id
-    let review = await Review.findById({ _id: req.params.id });
-    let post = await Post.findById({ _id: req.params.id });
-
-    // Delete Review from db
-    await review.remove({ _id: req.params.id });
-    console.log("Deleted Review");
-    res.redirect(`/post/${post}`); //this needs to be changed to the post id, it's pulling review id
-  } catch (err) {
-    res.redirect("/feed");
+    let result = await collection
+      .aggregate([
+        {
+          $search: {
+            autocomplete: {
+              query: `${request.query.query}`,
+              path: "title",
+              fuzzy: {
+                "maxEdits": 2,
+                "prefixLength": 3,
+              },
+            }
+          }
+        }
+      ])
+      .toArray();
+    response.send(result)
+  } catch(err){
+    console.log(err)
+    response.status(500).send({message:error.message})
   }
-};
+}

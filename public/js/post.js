@@ -1,6 +1,7 @@
 //const ratingStars = [...document.getElementById("rating")];
 const addReviewBtn = document.querySelector("#addReview")
 const form = document.querySelector("#reviewForm");
+const starRating = document.getElementsByClassName("mask-heart");
 
 //form.style.display = "none"
 
@@ -13,11 +14,12 @@ function addReview() {
  }
 }
 
+Array.from(starRating).forEach(item => {
+  item.addEventListener('click', event => {
+    var ratingVal = item.getAttribute('value')
+    return ratingVal
+    console.log("When you click upon a star", ratingVal)
+  })
+})
 
 
-function getRating(stars) {
-  let inactiveStars = "mask mask-heart ";
-  //let activeStars = " mask mask-heart checked "; //color it inactive
-  let starsLength = stars.length //assigns variable to length of parameters 
-  let i;
-}

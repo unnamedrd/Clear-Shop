@@ -9,6 +9,10 @@ const ReviewSchema = new mongoose.Schema({
     type: Number, 
     required: false, 
   },
+  product: {
+    type: String, 
+    required: false,
+  },
   post: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Post",

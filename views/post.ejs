@@ -76,6 +76,13 @@
               </div>
             
             </div>
+             <div class="mb-3 w-auto">
+              <label for="review" class="form-label">Favorite Product</label>
+              <div>
+                  <textarea type="text" class="textarea" id="product" name="product" placeholder="Link to your favorite product"></textarea>
+              </div>
+            
+            </div>
           
               <input type="hidden" name="post" value="<%=post._id%>" />
               <button type="submit" class="m-2 btn btn-primary" value="Upload">Submit</button>
@@ -155,7 +162,7 @@
    
     <tbody>
       <!-- row 1 -->
-      <tr>
+      <tr class = "reviewRow">
         <th>
         <form
           action="/review/deleteReview/<%= el.id %>?_method=DELETE"
@@ -173,7 +180,18 @@
         </td>
          <td><%= el.createdAt.toDateString() %></td>
         <td><%= el.review %></td>
-         <td><%= el.rating %></td>
+         <td>
+           <div value = `${el.rating}`></div>
+           <%= el.rating %>
+            <div class="rating gap-1 mt-2">
+              <input type="radio" name="rating" value = "1"  class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating" value = "2" class="mask mask-heart bg-orange-400"  />
+              <input type="radio" name="rating" value = "3"  class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating" value = "4"  class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating" value = "5"  class="mask mask-heart bg-green-400" />
+            </div> 
+        
+        </td>
       </tr>
     </tbody>
     <% }) %>

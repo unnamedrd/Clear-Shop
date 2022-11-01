@@ -2,6 +2,7 @@
 const addReviewBtn = document.querySelector("#addReview")
 const form = document.querySelector("#reviewForm");
 const starRating = document.getElementsByClassName("mask-heart");
+const rating = document.getElementsByClassName("reviewRow")
 
 //form.style.display = "none"
 
@@ -23,4 +24,15 @@ Array.from(starRating).forEach(item => {
   })
 })
 
+form.addEventListener('click', getRatingAvg)//alternatively calc everytime the page loads and only display average if ratings are present in collection with conditional
 
+function getRatingAvg() {
+  console.log("calcing average")
+  const totalRatingScore = 0;
+   Array.from(rating).forEach((item) => {
+    var ratingVal = itme.getAttribute("value");
+    totalRatingScore += ratingVal;
+    totalRatingScore = totalRatingScore / (Array.length - 1);
+    console.log(totalRatingScore);
+  });
+}

@@ -12,6 +12,7 @@ module.exports = {
       await Review.create({
         review: req.body.review,
         rating: req.body.rating,
+        product: req.body.product,
         user: req.user.id,
         post: req.body.post
       });

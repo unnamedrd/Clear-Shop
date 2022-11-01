@@ -58,15 +58,16 @@
              </p>
         
              <div class="rating gap-1 mt-2">
-              <input type="radio" name="rating-3" value = "1"  class="mask mask-heart bg-red-400" />
-              <input type="radio" name="rating-3" value = "2" class="mask mask-heart bg-orange-400"  />
-              <input type="radio" name="rating-3" value = "3"  class="mask mask-heart bg-yellow-400" />
-              <input type="radio" name="rating-3" value = "4"  class="mask mask-heart bg-lime-400" />
-              <input type="radio" name="rating-3" value = "5"  class="mask mask-heart bg-green-400" />
+              <input type="radio" name="rating" value = "1"  class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating" value = "2" class="mask mask-heart bg-orange-400"  />
+              <input type="radio" name="rating" value = "3"  class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating" value = "4"  class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating" value = "5"  class="mask mask-heart bg-green-400" />
             </div> 
               <!--enctype="multipart/form-data"-->
             </div>
-           
+            
+            
             
             <div class="mb-3">
               <label for="review" class="form-label">Review</label>
@@ -144,6 +145,7 @@
         <th>Name</th>
         <th>Date</th>
         <th>Review</th>
+        <th>Rating</th>
         <th></th>
       </tr>
     </thead>
@@ -171,6 +173,7 @@
         </td>
          <td><%= el.createdAt.toDateString() %></td>
         <td><%= el.review %></td>
+         <td><%= el.rating %></td>
       </tr>
     </tbody>
     <% }) %>

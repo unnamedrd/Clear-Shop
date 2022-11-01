@@ -4,6 +4,7 @@ const Post = require("../models/Post");
 
 module.exports = {
   createReview: async (req, res) => {
+    const post = req.body.post
     try {
       // Upload image to cloudinary
       //const result = await cloudinary.uploader.upload(req.file.path);
@@ -16,7 +17,7 @@ module.exports = {
       });
      
       console.log("Review has been added!");
-      res.redirect("/feed");
+      res.redirect(`/post/${post}`);
     } catch (err) {
       console.log(err);
     }

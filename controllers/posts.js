@@ -74,10 +74,10 @@ module.exports = {
   
       await post.remove({ _id: req.params.id });
       console.log("Deleted Post");
-      res.redirect("/feed");
+      res.redirect(`/post/${req.params.id}`);
     } catch (err) {
       console.log(err)
-      res.redirect("/feed");
+      res.redirect(`/post/${req.params.id}`);
     }
   },
 };

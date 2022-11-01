@@ -18,6 +18,7 @@ Array.from(starRating).forEach(item => {
   item.addEventListener('click', event => {
     var ratingVal = item.getAttribute('value')
     return ratingVal
+    //post request to backend
     console.log("When you click upon a star", ratingVal)
   })
 })

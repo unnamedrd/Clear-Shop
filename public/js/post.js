@@ -3,6 +3,7 @@ const addReviewBtn = document.querySelector("#addReview")
 const form = document.querySelector("#reviewForm");
 const starRating = document.getElementsByClassName("mask-heart");
 const rating = document.getElementsByClassName("reviewRow")
+const submitReview = document.getElementById("reviewSubBtn");
 
 //form.style.display = "none"
 
@@ -24,7 +25,7 @@ Array.from(starRating).forEach(item => {
   })
 })
 
-form.addEventListener('click', getRatingAvg)//alternatively calc everytime the page loads and only display average if ratings are present in collection with conditional
+reviewSubBtn.addEventListener("click", getRatingAvg);//alternatively calc everytime the page loads and only display average if ratings are present in collection with conditional
 
 function getRatingAvg() {
   console.log("calcing average")

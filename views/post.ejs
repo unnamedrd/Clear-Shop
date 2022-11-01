@@ -76,7 +76,7 @@
               </div>
             
             </div>
-             <div class="mb-3 w-auto">
+             <div class="mb-3 w-full">
               <label for="review" class="form-label">Favorite Product</label>
               <div>
                   <textarea type="text" class="textarea" id="product" name="product" placeholder="Link to your favorite product"></textarea>
@@ -85,7 +85,7 @@
             </div>
           
               <input type="hidden" name="post" value="<%=post._id%>" />
-              <button type="submit" class="m-2 btn btn-primary" value="Upload">Submit</button>
+              <button type="submit" class="m-2 btn btn-primary" value="Upload" id="reviewSubBtn">Submit</button>
             </form>
           </div>
   
@@ -99,6 +99,18 @@
 </div>
 
   
+<div class="carousel w-full">
+  <% review.forEach( el=> { %>
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src=`<%= el.product %>` class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+ <% }) %>
+  </div>
+</div>
  
 
 
@@ -114,6 +126,21 @@
         <div class="text-lg font-bold text-slate-700"><%=user.userName%></div>
       </div>
       <div class="flex items-center space-x-8">
+        
+           <td>
+           <div value = `${el.rating}`></div>
+         
+            <div class="rating gap-1 mt-2">
+                <%= el.rating %>
+              <input type="radio" name="rating" value = "1"  class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating" value = "2" class="mask mask-heart bg-orange-400"  />
+              <input type="radio" name="rating" value = "3"  class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating" value = "4"  class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating" value = "5"  class="mask mask-heart bg-green-400" />
+            </div> 
+        
+        </td>
+         <div class="text-xs text-neutral-500"><%= el.createdAt.toDateString() %></div>
         <form
           action="/review/deleteReview/<%= el.id %>?_method=DELETE"
           method="POST"
@@ -121,14 +148,14 @@
           <button class="btn btn-primary" id="delBtn">Delete</button>
       
         </form>
-        <div class="text-xs text-neutral-500"><%= el.createdAt.toDateString() %></div>
+       
       </div>
     </div>
 
     <div class="mt-4 mb-6">
       <div class="text-sm text-neutral-600"> <%= el.review %></div>
     </div>
-
+  
     <div>
       <div class="flex items-center justify-between text-slate-500">
         <div class="flex space-x-4 md:space-x-8">
@@ -143,6 +170,9 @@
 <% }) %>
 
     <!--Table of Reviews-->
+<!--
+
+
 <div>
  <div class="overflow-x-auto w-full flex items-center m-10">
     <table class="table w-50 justify-center">
@@ -159,9 +189,13 @@
 
     <% review.forEach( el=> { %>
     <!-- head -->
-   
+   <!--
+
+  
     <tbody>
       <!-- row 1 -->
+
+       <!--
       <tr class = "reviewRow">
         <th>
         <form
@@ -182,8 +216,9 @@
         <td><%= el.review %></td>
          <td>
            <div value = `${el.rating}`></div>
-           <%= el.rating %>
+         
             <div class="rating gap-1 mt-2">
+                <%= el.rating %>
               <input type="radio" name="rating" value = "1"  class="mask mask-heart bg-red-400" />
               <input type="radio" name="rating" value = "2" class="mask mask-heart bg-orange-400"  />
               <input type="radio" name="rating" value = "3"  class="mask mask-heart bg-yellow-400" />
@@ -196,7 +231,8 @@
     </tbody>
     <% }) %>
   </div>
-
+  
+-->
 </div>
 </div>
 <script src="/js/post.js"></script>

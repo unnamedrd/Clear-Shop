@@ -21,9 +21,9 @@
 Please refer to the demo for sample output. 
 The live site/demo is here: https://gray-super-blackbuck.cyclic.app
 
-**Project Timeline : 1 month** 
+**Project Timeline : 2 months** 
 
-**Project Status: MVP in Progress**
+**Project Status: MVP Completed. Optimizations in progress**
 
 
 ## PROCESS <a name="process"></a>
@@ -41,9 +41,13 @@ MVP Features
 - Create profile page for each business 
  - Review Feature 
 
+Completed Features
+ - Ratings Feature 
+ 
+
 Extra
 
-- Ratings Feature 
+
 - Search Feature 
 - Filter Feature 
 - Categories to Form
@@ -109,12 +113,13 @@ In order to run the program please do the following:
 
 
 #### Known Bugs <a name="bugs"></a>
-- [ ] Currently the directory page does not include a search function 
-- [ ] 
+- [ ] The new tags on the feed profiles are static 
+- [ ] Edit profile button is not functional 
 
 
 #### Additional Features for future Development <a name="features"></a>
 - [ ] Password Reset
+- [ ] Currently the directory page does not include a search function or filter function
 - [ ] 
 
 #### How to Contribute <a name="Contribute"></a>

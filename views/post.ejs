@@ -95,14 +95,14 @@
   </div>  
 <!--End Form-->
  
- 
+ <!--Favorite Products Image Carousel-->
 </div>
 
   
 <div class="carousel w-full">
   <% review.forEach( el=> { %>
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src=`<%= el.product %>` class="w-full" />
+  <div id="slide1" class="carousel-item relative w-50">
+    <img src="<%= el.product %>" class="bg-slate-200 block w-full mx-auto px-2 mb-2 dark:bg-black dark:outline dark:outline-1 dark:outline-slate-100"" />
     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" class="btn btn-circle">❮</a> 
       <a href="#slide2" class="btn btn-circle">❯</a>
@@ -113,7 +113,7 @@
 </div>
  
 
-
+<!--End Carousel-->
 
 
 <div>
@@ -122,7 +122,7 @@
      <div class="rounded-xl border p-5 shadow-md w-9/12 bg-white">
     <div class="flex w-full items-center justify-between border-b pb-3">
       <div class="flex items-center space-x-3">
-        <div class="h-8 w-8 rounded-full bg-slate-400 bg-[url('https://i.pravatar.cc/32')]"></div>
+        <div class="h-8 w-8 rounded-full bg-slate-400 bg-[url("https://img.icons8.com/color/48/000000/test-account.png")]></div>
         <div class="text-lg font-bold text-slate-700"><%=user.userName%></div>
       </div>
       <div class="flex items-center space-x-8">

@@ -3,12 +3,13 @@ const addReviewBtn = document.querySelector("#addReview")
 const form = document.querySelector("#reviewForm");
 const starRating = document.getElementsByClassName("mask-heart");
 const rating = document.getElementsByClassName("reviewRow")
-const submitReview = document.getElementById("reviewSubBtn");
+const submitReview = document.querySelector("#reviewSubBtn");
 
 //form.style.display = "none"
 
 addReviewBtn.addEventListener("click", addReview)
 function addReview() {
+  console.log("you want to leave a review?")
   if (form.style.display == "none") {
        form.style.backgroundColor = "blue"
   } else {

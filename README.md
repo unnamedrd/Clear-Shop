@@ -20,6 +20,7 @@
 
 Please refer to the demo for sample output. 
 The live site/demo is here: https://gray-super-blackbuck.cyclic.app
+Use the following guest login: username: test@gmail.com password: testtest1!
 
 **Project Timeline : 2 months** 
 

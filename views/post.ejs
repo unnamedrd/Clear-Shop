@@ -178,69 +178,7 @@
 <% }) %>
 
     <!--Table of Reviews-->
-<!--
 
-
-<div>
- <div class="overflow-x-auto w-full flex items-center m-10">
-    <table class="table w-50 justify-center">
-   <thead class="bg-[#fecaca]">
-      <tr>
-        <th>Delete</th>
-        <th>Name</th>
-        <th>Date</th>
-        <th>Review</th>
-        <th>Rating</th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <% review.forEach( el=> { %>
-    <!-- head -->
-   <!--
-
-  
-    <tbody>
-      <!-- row 1 -->
-
-       <!--
-      <tr class = "reviewRow">
-        <th>
-        <form
-          action="/review/deleteReview/<%= el.id %>?_method=DELETE"
-          method="POST"
-          class="col-3"
-        >
-           <button class="btn btn-primary" id="delBtn">Delete</button>
-         
-        </form>
-        </th>
-        <td>
-          <div class="flex items-center space-x-3">
-              <div class="font-bold"><%=user.userName%></div>
-          </div>
-        </td>
-         <td><%= el.createdAt.toDateString() %></td>
-        <td><%= el.review %></td>
-         <td>
-           <div value = `${el.rating}`></div>
-         
-            <div class="rating gap-1 mt-2">
-                <%= el.rating %>
-              <input type="radio" name="rating" value = "1"  class="mask mask-heart bg-red-400" />
-              <input type="radio" name="rating" value = "2" class="mask mask-heart bg-orange-400"  />
-              <input type="radio" name="rating" value = "3"  class="mask mask-heart bg-yellow-400" />
-              <input type="radio" name="rating" value = "4"  class="mask mask-heart bg-lime-400" />
-              <input type="radio" name="rating" value = "5"  class="mask mask-heart bg-green-400" />
-            </div> 
-        
-        </td>
-      </tr>
-    </tbody>
-    <% }) %>
-  </div>
-  
--->
 </div>
 </div>
 <script src="/js/post.js"></script>

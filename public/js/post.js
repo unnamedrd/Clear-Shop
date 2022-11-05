@@ -4,6 +4,7 @@ const form = document.querySelector("#reviewForm");
 const starRating = document.getElementsByClassName("mask-heart");
 const rating = document.getElementsByClassName("reviewRow")
 const submitReview = document.querySelector("#reviewSubBtn");
+const editProfile = document.querySelector("#edit")
 
 //form.style.display = "none"
 
@@ -38,3 +39,7 @@ function getRatingAvg() {
     console.log(totalRatingScore);
   });
 }
+
+editProfile.addEventListener("click", function () {
+  alert("Oops! We're working on getting this feature working right now. Please check again later")
+})

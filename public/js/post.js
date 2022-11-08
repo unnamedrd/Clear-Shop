@@ -43,3 +43,6 @@ function getRatingAvg() {
 editProfile.addEventListener("click", function () {
   alert("Oops! We're working on getting this feature working right now. Please check again later")
 })
+
+//to create Edit function 
+//toggle all fields to textbox or inputs, with the inner text populated with existing data from MongoDB 

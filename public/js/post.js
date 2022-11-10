@@ -5,6 +5,7 @@ const starRating = document.getElementsByClassName("mask-heart");
 const rating = document.getElementsByClassName("reviewRow")
 const submitReview = document.querySelector("#reviewSubBtn");
 const editProfile = document.querySelector("#edit")
+const ratings = require("../models/Reviews");
 
 //form.style.display = "none"
 

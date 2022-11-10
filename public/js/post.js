@@ -40,6 +40,8 @@ function getRatingAvg() {
   });
 }
 
+getRatingAvg()
+
 editProfile.addEventListener("click", function () {
   alert("Oops! We're working on getting this feature working right now. Please check again later")
 })

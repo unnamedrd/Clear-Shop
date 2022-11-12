@@ -120,7 +120,7 @@ In order to run the program please do the following:
 
 #### Additional Features for future Development <a name="features"></a>
 - [ ] Password Reset
-- [ ] Currently the directory page does not include a search function or filter function
+- [ ] Currently the search function is inactive
 - [ ] 
 
 #### How to Contribute <a name="Contribute"></a>

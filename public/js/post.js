@@ -1,11 +1,10 @@
 //const ratingStars = [...document.getElementById("rating")];
 const addReviewBtn = document.querySelector("#addReview")
 const form = document.querySelector("#reviewForm");
-const starRating = document.getElementsByClassName("mask-heart");
 const rating = document.getElementsByClassName("reviewRow")
 const submitReview = document.querySelector("#reviewSubBtn");
 const editProfile = document.querySelector("#edit")
-const ratings = require("../models/Reviews");
+//const ratings = require("../models/Reviews");
 
 //form.style.display = "none"
 
@@ -20,14 +19,7 @@ function addReview() {
 }
 //event listener needs review
 
-Array.from(starRating).forEach(item => {
-  item.addEventListener('click', event => {
-    var ratingVal = item.getAttribute('value')
-    return ratingVal
-    //post request to backend
-    console.log("When you click upon a star", ratingVal)
-  })
-})
+
 
 reviewSubBtn.addEventListener("click", getRatingAvg);//alternatively calc everytime the page loads and only display average if ratings are present in collection with conditional
 

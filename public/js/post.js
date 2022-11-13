@@ -18,6 +18,7 @@ function addReview() {
     form.style.display = "none"
  }
 }
+//event listener needs review
 
 Array.from(starRating).forEach(item => {
   item.addEventListener('click', event => {

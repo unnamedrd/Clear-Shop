@@ -12,9 +12,12 @@ addReviewBtn.addEventListener("click", addReview)
 function addReview() {
   console.log("you want to leave a review?")
   if (form.style.display == "none") {
-       form.style.backgroundColor = "blue"
+    console.log("the form isn't showing")
+     form.style.display = "block";
+      
   } else {
     form.style.display = "none"
+    console.log("it is visible")
  }
 }
 //event listener needs review

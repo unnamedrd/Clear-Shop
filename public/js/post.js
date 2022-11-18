@@ -4,7 +4,8 @@ const form = document.querySelector("#reviewForm");
 const rating = document.getElementsByClassName("reviewRow")
 const submitReview = document.querySelector("#reviewSubBtn");
 const editProfile = document.querySelector("#edit")
-//const ratings = require("../models/Reviews");
+//const("#BusinessProfileFormCard");
+
 
 //form.style.display = "none"
 

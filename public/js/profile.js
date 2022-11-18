@@ -8,7 +8,7 @@ const businessForm = document.querySelector("#BusinessProfileFormCard");
 
 addBusinessBtn.addEventListener("click", addBusiness)
 function addBusiness() {
-   
+   console.log("you're about to fill out a form")
   if (businessForm.style.display == "none") {
   
      businessForm.style.display = "block";

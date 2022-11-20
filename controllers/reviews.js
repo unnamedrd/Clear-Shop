@@ -37,6 +37,20 @@ module.exports = {
       console.log(err);
     }
   },
+  editReview: async (req, res) => {
+    try {
+      await Review.findOneAndUpdate(
+        { _id: req.params.id },
+        {
+          review: req.body.review
+        }
+      );
+      console.log("review edited")
+      res.redirect("/feed")
+    } catch (err) {
+      console.log(err)
+    }
+  },
   deleteReview: async (req, res) => {
     try {
       // Find Comment by id

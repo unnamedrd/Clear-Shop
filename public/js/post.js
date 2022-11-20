@@ -4,12 +4,23 @@ const form = document.querySelector("#reviewForm");
 const rating = document.getElementsByClassName("reviewRow")
 const submitReview = document.querySelector("#reviewSubBtn");
 const editProfile = document.querySelector("#edit")
+const editReviewBtn = document.querySelectorAll("#editRevBtn");
 //const("#BusinessProfileFormCard");
-
 
 //form.style.display = "none"
 
+Array.from(editReviewBtn).forEach((el) => {
+  el.addEventListener('click', editReview)
+})
+
+function editReview() {
+  console.log("time to edit your review")
+  
+}
+
+
 addReviewBtn.addEventListener("click", addReview)
+
 function addReview() {
 
   if (form.style.display == "none") {

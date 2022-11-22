@@ -15,6 +15,10 @@ Array.from(editReviewBtn).forEach((el) => {
 
 function editReview() {
   console.log("time to edit your review")
+  //select node with text
+  //convert to text box
+  //placeholder text should be review 
+  //show save button
   
 }
 
